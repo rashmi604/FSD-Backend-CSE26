@@ -1,0 +1,24 @@
+ function greeting(f_name, l_name)
+ {
+     let r= f_name + l_name;
+     console.log(`good morning${r}`) // or ("goodmornng"+r)
+ }
+greeting("rashmi","reema")
+
+
+alert('welcome') // gives pop up undefined gives no result message
+
+confirm('r you want to exit from here?') // gives pop up and true or false
+
+prompt ("please enter the value of a")//for taking value from user
+
+let a= prompt ("enter the value of a")
+let b= prompt ("enter the value of b")
+console.log(a+b)//ans 1020(as a string)
+
+
+
+
+let a= parsIntprompt ("enter the value of a")
+let b= parsIntprompt ("enter the value of b")
+console.log(a+b)//ans 30(parseInt convert into integer) // (for decimal value write pasreFloat)
