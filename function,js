@@ -15,6 +15,7 @@ prompt ("please enter the value of a")//for taking value from user
 let a= prompt ("enter the value of a")
 let b= prompt ("enter the value of b")
 console.log(a+b)//ans 1020(as a string)
+<h1>prompts</h1>
 
 
 
