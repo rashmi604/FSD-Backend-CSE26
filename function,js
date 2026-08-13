@@ -1,25 +1,103 @@
- function greeting(f_name, l_name)
- {
-     let r= f_name + l_name;
-     console.log(`good morning${r}`) // or ("goodmornng"+r)
- }
-greeting("rashmi","reema")
+// function greeting(f_name, l_name)
+//  {
+//      let r= f_name + l_name;
+//      console.log(`good morning${r}`) // or ("goodmornng"+r)
+//  }
+// greeting("rashmi","reema")
 
 
-alert('welcome') // gives pop up undefined gives no result message
+// alert('welcome') // gives pop up undefined gives no result message
 
-confirm('r you want to exit from here?') // gives pop up and true or false
+// confirm('r you want to exit from here?') // gives pop up and true or false
 
-prompt ("please enter the value of a")//for taking value from user
+// prompt ("please enter the value of a")//for taking value from user
 
-let a= prompt ("enter the value of a")
-let b= prompt ("enter the value of b")
-console.log(a+b)//ans 1020(as a string)
-<h1>prompts</h1>
-
-
+// let a= prompt ("enter the value of a")
+// let b= prompt ("enter the value of b")
+// console.log(a+b)//ans 1020(as a string)
+// <h1>prompts</h1>
 
 
-let a= parsIntprompt ("enter the value of a")
-let b= parsIntprompt ("enter the value of b")
-console.log(a+b)//ans 30(parseInt convert into integer) // (for decimal value write pasreFloat)
+
+
+// let a= parsIntprompt ("enter the value of a")
+// let b= parsIntprompt ("enter the value of b")
+// console.log(a+b)//ans 30(parseInt convert into integer) // (for decimal value write pasreFloat)
+
+// // fuction declaration
+// function add (a,b) // array,variables,objects,array of objects
+
+// //array declaration
+// arr = new Array[10,20,30]
+
+// //object declaration 
+// student = {
+//     name: "Riya",
+//     age: 20,
+// }
+
+// // array of objects declaration
+// student = [{name: " xyz",age: 20},{name: "hfgh",age: 19}]
+
+
+// //passing an object to function
+// function displayStudent(student){ // function declaration
+//     console.log(student.name);
+//     console.log(student.age)
+// }
+// let student = {
+// name: "Rahul",
+// age: 20
+// };
+// displayStudent(student) // function call
+// //output : {name:"Rahul",age:20} but if we dont write console.log : Rahul 20
+
+// student = [
+//     {
+//         name: " Riya",age: 20
+//     },
+//     {
+//         name: "Rahul",age: 19
+//     },
+//     {
+//         name: " Amit",age: 20
+//     },
+//     {
+//         name: "Anil",age: 19
+//     }
+// ];
+// function displayStudent(data){
+//     for(let student of data){
+//         console.log(student.name,student.age);
+//     }
+// }
+// displayStudents(student_arr);//for of loop gives actual value
+
+//Passing an Object containing an array
+let student = {
+name: "Rahul",
+marks: [10,20,30,40] // array form
+};
+function displayStudent(student){ // function declaration
+    console.log(student.name);
+    console.log(student.marks)
+}
+displayStusdent(student);
+
+function calculateTotal(student){
+    let total=0
+    for(let mark of student.marks){
+        total+= mark;
+    }
+    return total;
+}
+let result = calculateTotal(student);
+console.log(result);
+
+
+
+
+
+
+
+// ]
