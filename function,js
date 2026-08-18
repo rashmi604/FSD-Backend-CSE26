@@ -95,9 +95,64 @@ let result = calculateTotal(student);
 console.log(result);
 
 
+function(a,b){
+    return a+b;
+}
+console.log(result(3,5));
+
+
+
+function a_func(a,b){
+    let s,m,mu,rem;
+    s=a+b;
+    m=a-b;
+    mu=a*b;
+    rem=a%b;
+    console.log(`sum= ${s} substraction= ${m} multplication= ${mu} and rem= ${rem}`)
+}
+a_func(10,5);//normal function from 1 to 9
+//Enormous function
+let r=function(a,b)
+{console.log(a+b)};
+r(10,5);//enormous function 
+
+//Arrow function
+let result = (a,b) => {
+    console.log(a+b);//or return a+b;
+}
+result(3,5);
+console.log(result);//calling
+
+let a => { // when only one parameter is given we can take it without braces
+    return (a*a);
+}
+console.log(3);
+
+//Callback Function(function inside another function)
+function greet(name){
+    console.log("Hello" + name);
+}
+
+function processUser(callback){
+    callback("Rahul");
+}
+
+processUser(greet)//function inside function as a reference
+
+funtion calculateTotal(a,b,callback){
+    let result = a + b;
+    callback(result);
+}
+function display(result){
+    console.log("Result =", result);
+}
+calculateTotal(10,20,display);
+
+//design a function from mathematical functions and pass reference of multiple functions like addition, substraction, multiplication and division like calculator 
 
 
 
 
 
-// ]
+
+
