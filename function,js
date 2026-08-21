@@ -74,81 +74,107 @@
 // displayStudents(student_arr);//for of loop gives actual value
 
 //Passing an Object containing an array
-let student = {
-name: "Rahul",
-marks: [10,20,30,40] // array form
-};
-function displayStudent(student){ // function declaration
+// let student = {
+// name: "Rahul",
+// marks: [10,20,30,40] // array form
+// };
+// function displayStudent(student){ // function declaration
+//     console.log(student.name);
+//     console.log(student.marks)
+// }
+// displayStusdent(student);
+
+// function calculateTotal(student){
+//     let total=0
+//     for(let mark of student.marks){
+//         total+= mark;
+//     }
+//     return total;
+// }
+// let result = calculateTotal(student);
+// console.log(result);
+
+
+// function(a,b){
+//     return a+b;
+// }
+// console.log(result(3,5));
+
+
+
+// function a_func(a,b){
+//     let s,m,mu,rem;
+//     s=a+b;
+//     m=a-b;
+//     mu=a*b;
+//     rem=a%b;
+//     console.log(`sum= ${s} substraction= ${m} multplication= ${mu} and rem= ${rem}`)
+// }
+// a_func(10,5);//normal function from 1 to 9
+// //Enormous function
+// let r=function(a,b)
+// {console.log(a+b)};
+// r(10,5);//enormous function 
+
+// //Arrow function
+// let result = (a,b) => {
+//     console.log(a+b);//or return a+b;
+// }
+// result(3,5);
+// console.log(result);//calling
+
+// let a => { // when only one parameter is given we can take it without braces
+//     return (a*a);
+// }
+// console.log(3);
+
+// //Callback Function(function inside another function)
+// function greet(name){
+//     console.log("Hello" + name);
+// }
+
+// function processUser(callback){
+//     callback("Rahul");
+// }
+
+// processUser(greet)//function inside function as a reference
+
+// funtion calculateTotal(a,b,callback){
+//     let result = a + b;
+//     callback(result);
+// }
+// function display(result){
+//     console.log("Result =", result);
+// }
+// calculateTotal(10,20,display);
+
+// //design a function from mathematical functions and pass reference of multiple functions like addition, substraction, multiplication and division like calculator 
+
+//  1.Passing an Array to a function 
+function displayNumbers(numbers){
+    console.log(numbers);
+}
+
+let arr = [10,20,30,40];
+displayNumbers(arr);
+
+// 2.Passing an Object to a function 
+function displayStudent(student){
     console.log(student.name);
-    console.log(student.marks)
-}
-displayStusdent(student);
-
-function calculateTotal(student){
-    let total=0
-    for(let mark of student.marks){
-        total+= mark;
-    }
-    return total;
-}
-let result = calculateTotal(student);
-console.log(result);
-
-
-function(a,b){
-    return a+b;
-}
-console.log(result(3,5));
-
-
-
-function a_func(a,b){
-    let s,m,mu,rem;
-    s=a+b;
-    m=a-b;
-    mu=a*b;
-    rem=a%b;
-    console.log(`sum= ${s} substraction= ${m} multplication= ${mu} and rem= ${rem}`)
-}
-a_func(10,5);//normal function from 1 to 9
-//Enormous function
-let r=function(a,b)
-{console.log(a+b)};
-r(10,5);//enormous function 
-
-//Arrow function
-let result = (a,b) => {
-    console.log(a+b);//or return a+b;
-}
-result(3,5);
-console.log(result);//calling
-
-let a => { // when only one parameter is given we can take it without braces
-    return (a*a);
-}
-console.log(3);
-
-//Callback Function(function inside another function)
-function greet(name){
-    console.log("Hello" + name);
+    console.log(student.age)
 }
 
-function processUser(callback){
-    callback("Rahul");
-}
+let student = {
+    name: "Rahul"
+    age: 20
+};
+displayStudent(student);
 
-processUser(greet)//function inside function as a reference
+// 3.
 
-funtion calculateTotal(a,b,callback){
-    let result = a + b;
-    callback(result);
+function displayStudents(data){
+    for (let student of data)
 }
-function display(result){
-    console.log("Result =", result);
-}
-calculateTotal(10,20,display);
-
-//design a function from mathematical functions and pass reference of multiple functions like addition, substraction, multiplication and division like calculator 
 
 
 

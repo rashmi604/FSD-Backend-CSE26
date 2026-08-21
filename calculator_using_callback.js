@@ -12,6 +12,6 @@ function menu(a,b){
 function calculator(callback){
     callback(100,5);
 }
-calculator(menu);
+calculator(menu);8
 
 
