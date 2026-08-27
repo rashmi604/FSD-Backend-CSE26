@@ -1,0 +1,24 @@
+//read file synchronously(line by line)
+const fs = require('fs'); // include module require
+try{
+    const data = fs.readFileSync('data.txt','utf8'); // call file which you want to read
+    console.log(data);
+}catch (err) {
+    console.log("Error":,err);
+}
+console.log("File Content");
+console.log(data);
+
+//read file asynchronously
+const fs = require('fs'); // include module require
+fs.readFileSync('data.txt','utf8',(err,data) =>{
+if (err) {
+    console.log("Error reading file":,err);
+    return;
+}
+console.log("File Content");
+console.log(data);
+});
+
+//Callback function is needed for asynchronus behaviour
+// promises and async await are used to solve callback hell(many callback fn)
