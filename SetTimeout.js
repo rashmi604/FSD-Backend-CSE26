@@ -41,3 +41,16 @@ function greet(f_name,l_name){
 }
 
 setTimeout(greet, 2000, "Rashmi", "Rajput"); // (callbackfunction (reference),timimg,parameter list)
+
+
+
+
+
+
+
+
+
+
+
+
+

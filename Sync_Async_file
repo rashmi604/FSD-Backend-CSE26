@@ -1,4 +1,4 @@
-//read file synchronously(line by line)
+//read file synchronously(all codes run line by line)
 const fs = require('fs'); // include module require
 try{
     const data = fs.readFileSync('data.txt','utf8'); // call file which you want to read
@@ -9,7 +9,7 @@ try{
 console.log("File Content");
 console.log(data);
 
-//read file asynchronously
+//read file asynchronously( agar kuch code ko run karne me time lagta hai to it dont wait it move to the next code kuch delay na ho isliye )
 const fs = require('fs'); // include module require
 fs.readFileSync('data.txt','utf8',(err,data) =>{
 if (err) {
