@@ -9,6 +9,8 @@ function menu(a,b){
 }
 // calculator(100,5);
 
+
+
 function calculator(callback){
     callback(100,5);
 }
