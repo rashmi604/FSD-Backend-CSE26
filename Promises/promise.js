@@ -9,6 +9,7 @@ reject("(reject your request");  // calling this function will reject your reque
 
 
 
+
 function GetData(dataId) // ek function hai GetData
 {
     return new Promise((resolve,reject)=>{
