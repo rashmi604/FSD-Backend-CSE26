@@ -36,6 +36,19 @@ promise.catch(()=>{
 console.log("network is not working properly")
 });
 
+//promise chain(agar ye hojaye to ye karo)
+GetData(1)
+.then((res)=>{
+    return GetData(2);})
+.then((res)=>{
+    retutn GetData(3);})
+.then((res)=>{
+    console.log(res);
+})
+
+
+
+
 
 
 
