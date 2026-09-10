@@ -1,4 +1,4 @@
-//Synchronous File Handling (CRUD)
+//Synchronous File Handling (CRUD-create read update delete)
 
 const f=require("fs"); // module fs ,http etc
 console.log("data1");
