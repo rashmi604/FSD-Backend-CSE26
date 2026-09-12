@@ -9,4 +9,5 @@ const server = http.createServer((req,res) => {
 server.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
+
 // here in this program an http server is created have two functions requests and respond
