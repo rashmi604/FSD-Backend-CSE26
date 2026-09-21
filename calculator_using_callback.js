@@ -7,8 +7,8 @@ function menu(a,b){
     console.log(`Addition: ${add} Subtration: ${sub} multiplication: ${multiply} divition: ${divide}`)
 
 }
-// calculator(100,5);
 
+// calculator(100,5);
 
 
 function calculator(callback){
